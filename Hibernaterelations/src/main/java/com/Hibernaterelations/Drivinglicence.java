@@ -7,26 +7,27 @@ import javax.persistence.OneToOne;
 @Entity
 public class Drivinglicence {
 	@Id
-	private String Dlic_no;
+	private String dlic_no;
 	@OneToOne
-	private Employee e;
+	private Employee employee;
 	
 	public String getDlic_no() {
-		return Dlic_no;
+		return dlic_no;
 	}
 	public void setDlic_no(String dlic_no) {
-		Dlic_no = dlic_no;
+		this.dlic_no = dlic_no;
 	}
-	
-	public Employee getE() {
-		return e;
+	public Employee getEmployee() {
+		return employee;
 	}
-	public void setE(Employee e) {
-		this.e = e;
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
 	}
+
+
 	@Override
 	public String toString() {
-		return "Drivinglicence [ Dlic_no=" + Dlic_no + "]";
+		return "Drivinglicence [ dlic_no=" + dlic_no + "]";
 	}
 	
 	
